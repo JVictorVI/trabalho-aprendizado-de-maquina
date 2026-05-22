@@ -1,0 +1,9 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+outputs/
+.jupyter/
+.jupyter_data/
+.jupyter_runtime/
+*.pyc
