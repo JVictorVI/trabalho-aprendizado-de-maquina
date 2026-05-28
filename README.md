@@ -10,27 +10,39 @@ Projeto de **classificação multiclasse** usando o dataset **UrbanTrace: Lifest
 - Pedro Enrique Jordão Ramos Gama e Silva (2315773)
 - Rogério Bruno de Almeida Júnior (2316922)
 
-## Objetivo
+## Dataset
 
-O objetivo do projeto é prever a categoria de risco de exposição à poluição (`risk_category`) a partir de variáveis relacionadas ao estilo de vida, deslocamento, localização e condições ambientais.
+O projeto utiliza o dataset **UrbanTrace: Lifestyle & Pollution Insights**, disponível publicamente no Kaggle:  
+https://www.kaggle.com/datasets/umuttuygurr/city-lifestyle-segmentation-dataset
 
-O problema escolhido é de **classificação multiclasse**, com três classes possíveis:
+O conjunto de dados foi desenvolvido para simular cenários urbanos modernos e analisar como fatores relacionados ao estilo de vida, mobilidade urbana e condições ambientais influenciam a exposição à poluição. O dataset combina informações demográficas, hábitos cotidianos e características ambientais para permitir estudos de segmentação, análise preditiva e classificação de risco.
+
+A base contém **10.000 registros** e **14 atributos**, incluindo variáveis numéricas, categóricas e booleanas. Entre as informações presentes estão:
+
+- tempo diário de deslocamento;
+- posse de veículo;
+- frequência de uso de transporte público;
+- proximidade de áreas industriais;
+- acesso a áreas verdes;
+- qualidade do ar dentro de casa;
+- nível de ruído urbano;
+- tipo de região residencial;
+- indicadores de exposição à poluição.
+
+O alvo do projeto é a coluna `risk_category`, que classifica o nível de risco de exposição à poluição em três categorias:
 
 - `Low`
 - `Medium`
 - `High`
 
-Essa escolha é adequada ao enunciado do trabalho porque envolve um alvo categórico, permite comparação entre modelos supervisionados e exige avaliação com métricas apropriadas para classificação.
+O dataset apresenta características relevantes para problemas reais de aprendizado de máquina, como:
 
-## Dataset
+- presença de valores ausentes;
+- desbalanceamento entre classes;
+- mistura de variáveis numéricas e categóricas;
+- necessidade de pré-processamento e transformação de atributos.
 
-O dataset está em formato CSV e possui:
-
-- **10.000 registros**
-- **14 colunas**
-- **valores ausentes**
-
-A base contém variáveis numéricas, categóricas e booleanas, como tempo diário de deslocamento, posse de veículo, tipo de localização, proximidade de indústrias, acesso a áreas verdes, qualidade do ar em casa, nível de ruído e categoria de risco.
+Essas características tornam a base adequada para experimentos de classificação supervisionada, comparação entre modelos e avaliação de técnicas de pré-processamento e regularização. Além disso, o tema do dataset possui relevância prática por abordar impactos ambientais e qualidade de vida em contextos urbanos.
 
 ## Arquivos
 
